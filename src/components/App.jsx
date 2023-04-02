@@ -5,6 +5,8 @@ import Insurance from "../abis/Insurance.json";
 import Main from "./Main";
 import { useState, useEffect } from "react";
 import logo from "../assets/LOGO.png";
+import { Blocks } from  'react-loader-spinner'
+
 
 function App() {
   const [account, setAccount] = useState("");
@@ -221,7 +223,14 @@ function App() {
       <main role="main">
         {loading ? (
           <div id="loader" className="text-center mt-5">
-            <p className="text-center">Loading....</p>
+            <Blocks
+              visible={true}
+              height="200"
+              width="200"
+              ariaLabel="blocks-loading"
+              wrapperStyle={{}}
+              wrapperClass="blocks-wrapper"
+            />
           </div>
         ) : (
           <Main
