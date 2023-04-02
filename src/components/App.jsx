@@ -26,6 +26,13 @@ function App() {
     load();
   }, []);
 
+  useEffect(() => {
+    window.ethereum.on("accountsChanged", function (accounts) {
+      setAccount(accounts[0]);
+      window.location.reload();
+    });
+  }, []);
+
   const loadWeb3 = async () => {
     if (window.ethereum) {
       window.web3 = new Web3(window.ethereum);
