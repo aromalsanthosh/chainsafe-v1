@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Chainsafe Insurance Management App Prototype - Version 1.0
+
+## B.Tech Final Year Project College Of Engineering Chengannur
+
+This is an initial prototype of the project built for learning purposes.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
